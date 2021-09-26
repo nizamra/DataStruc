@@ -13,9 +13,12 @@ class Queue{
             return false;
         }
     }
+    // backingArray[(front + size) % backingArray.length] = data;
+
     public void inQueue(Integer in){
         queue[last] = in;
         last++;
+        // (front + size) % backingArray.length
     }
     public Integer deQueue(){
         Integer toDequ = queue[front];
